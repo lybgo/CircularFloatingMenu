@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lybgo.circularfloatingmenu.CircularFloatingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/circularFloatingMenu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:degrees="320"
+    app:radius="90dp"
+    app:startDegrees="180">
+    <TextView
+        style="@style/center_item"
+        android:text="Item1" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item2" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item3" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item4" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item5" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item6" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item7" />
+    <TextView
+        style="@style/center_item"
+        android:text="Item8" />
+
+
+    <Button
+        style="@style/menu_btn"
+        android:layout_centerInParent="true"
+        android:text="Menu5"/>
+</com.lybgo.circularfloatingmenu.CircularFloatingMenu>

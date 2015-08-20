@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="CFMDefaultRadius">120dp</dimen>
+    <integer name="CFMDefaultDegrees">180</integer>
+    <integer name="CFMDefaultStartDegrees">180</integer>
+</resources>

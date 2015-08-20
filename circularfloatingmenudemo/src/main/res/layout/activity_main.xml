@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/top_left_menu" />
+    <include layout="@layout/top_center_menu" />
+    <include layout="@layout/top_right_menu" />
+    <include layout="@layout/left_center_menu" />
+    <include layout="@layout/right_center_menu" />
+    <include layout="@layout/buttom_left_menu" />
+    <include layout="@layout/bottom_center_menu" />
+    <include layout="@layout/bottom_right_menu" />
+    <include layout="@layout/center_menu" />
+
+
+</RelativeLayout>

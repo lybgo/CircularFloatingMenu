@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="top_left_item">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:background">@drawable/item_text_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="menu_btn">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/item_text_menu_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="top_center_item" parent="top_left_item">
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="top_right_item" parent="top_left_item">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="left_center_item" parent="top_left_item">
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="center_item" parent="top_left_item">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="right_center_item" parent="top_left_item">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="button_left_item" parent="top_left_item">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="bottom_center_item" parent="top_left_item">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="bottom_right_item" parent="top_left_item">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+</resources>
