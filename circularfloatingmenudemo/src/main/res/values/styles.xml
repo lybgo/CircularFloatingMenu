@@ -26,6 +26,8 @@
 
     <style name="top_center_item" parent="top_left_item">
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/item_image_bg</item>
     </style>
 
     <style name="top_right_item" parent="top_left_item">

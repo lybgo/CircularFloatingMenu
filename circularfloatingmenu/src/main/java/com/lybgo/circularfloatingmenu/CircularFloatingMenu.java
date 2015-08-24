@@ -138,7 +138,6 @@ public class CircularFloatingMenu extends RelativeLayout {
                     } else {
                         mOnItemTranslationListener.translationItem(item, x, y, true);
                     }
-
                 }
             } else {
                 for (int i = 0; i < mItemCount; i++) {
@@ -163,19 +162,18 @@ public class CircularFloatingMenu extends RelativeLayout {
     private OnClickListener mClickListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (mOnItemClickListener == null) {
-                return;
+            if (mOnItemClickListener != null) {
+                mOnItemClickListener.onItemClick(v, (Integer) v.getTag());
             }
-            mOnItemClickListener.onItemClick(v, (Integer) v.getTag());
             if (mIsItemClickClose) {
-                mVMenu.performClick();
+                mMenuClickListener.onClick(mVMenu);
             }
         }
     };
     private OnItemTranslationListener mOnItemTranslationListener = new OnItemTranslationListener() {
         Interpolator outInterpolator = new OvershootInterpolator();
         Interpolator inInterpolator = new AccelerateDecelerateInterpolator();
-        float defaultRotation = -90;
+        float defaultRotation = -180;
         float defaultAlpha = 0f;
 
         @Override
@@ -189,7 +187,7 @@ public class CircularFloatingMenu extends RelativeLayout {
             float toAlpha = isOpen ? 1 : defaultAlpha;
 
             ViewPropertyAnimator.animate(v).translationX(x).translationY(y).rotation(toRotation).alpha(toAlpha)
-                    .setInterpolator(interpolator).setDuration(400).start();
+                    .setInterpolator(interpolator).setDuration(500).start();
         }
     };
 

@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.lybgo.circularfloatingmenu.CircularFloatingMenu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu2"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     app:degrees="-180"
     app:radius="90dp"
     app:startDegrees="180">
 
-    <TextView
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item1" />
-    <TextView
+        android:src="@drawable/ic_camera_selector"/>
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item2" />
-    <TextView
+        android:src="@drawable/ic_chat_selector"/>
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item3" />
-    <TextView
+        android:src="@drawable/ic_new_selector"/>
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item4" />
-    <TextView
+        android:src="@drawable/ic_picture_selector"/>
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item5" />
-    <TextView
+        android:src="@drawable/ic_place_selector"/>
+    <ImageView
         style="@style/top_center_item"
-        android:text="Item6" />
-    <TextView
-        style="@style/top_center_item"
-        android:text="Item7" />
+        android:src="@drawable/ic_send_new_selector"/>
 
-    <Button
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_video_selector"/>
+
+
+
+    <ImageButton
         style="@style/menu_btn"
         android:layout_centerHorizontal="true"
-        android:text="Menu2"/>
+        android:background="@drawable/item_image_bg"
+        android:src="@mipmap/ic_action_new"/>
+
+
+
 
 </com.lybgo.circularfloatingmenu.CircularFloatingMenu>
