@@ -4,7 +4,7 @@
 An animated, customizable circular floating menu for Android, inspired by Path app.
 
 ### Demo
- demo:
+ demo:<br/>
  <img src="demoRes/20150824_181826_5-246.gif">
  1. menu1:
 <img src="demoRes/20150825093207.png">
