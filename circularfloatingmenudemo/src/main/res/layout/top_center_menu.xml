@@ -10,36 +10,36 @@
 
     <ImageView
         style="@style/top_center_item"
-        android:src="@drawable/ic_camera_selector"/>
-    <ImageView
-        style="@style/top_center_item"
-        android:src="@drawable/ic_chat_selector"/>
-    <ImageView
-        style="@style/top_center_item"
-        android:src="@drawable/ic_new_selector"/>
-    <ImageView
-        style="@style/top_center_item"
-        android:src="@drawable/ic_picture_selector"/>
-    <ImageView
-        style="@style/top_center_item"
-        android:src="@drawable/ic_place_selector"/>
-    <ImageView
-        style="@style/top_center_item"
-        android:src="@drawable/ic_send_new_selector"/>
+        android:src="@drawable/ic_camera_selector" />
 
     <ImageView
         style="@style/top_center_item"
-        android:src="@drawable/ic_video_selector"/>
+        android:src="@drawable/ic_chat_selector" />
 
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_new_selector" />
 
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_picture_selector" />
+
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_place_selector" />
+
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_send_new_selector" />
+
+    <ImageView
+        style="@style/top_center_item"
+        android:src="@drawable/ic_video_selector" />
 
     <ImageButton
         style="@style/menu_btn"
         android:layout_centerHorizontal="true"
         android:background="@drawable/item_image_bg"
-        android:src="@mipmap/ic_action_new"/>
-
-
-
+        android:src="@mipmap/ic_action_new" />
 
 </com.lybgo.circularfloatingmenu.CircularFloatingMenu>
