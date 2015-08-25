@@ -1,6 +1,5 @@
 # CircularFloatingActionMenu
 
-<img src="assets/circularfab.gif">
 
 An animated, customizable circular floating menu for Android, inspired by Path app.
 
@@ -23,7 +22,7 @@ CircularFloatingMenu can be attached to **any view** in your layout. CircularFlo
 ```
 
 1 - Create CircularFloatingMenu in layout.xml:
-	eg:image
+	eg:<img src="demoRes/20150825093250.png">
 ```java
 //in layout xml
 <com.lybgo.circularfloatingmenu.CircularFloatingMenu xmlns:android="http://schemas.android.com/apk/res/android"
