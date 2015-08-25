@@ -1,4 +1,4 @@
-# CircularFloatingActionMenu
+# CircularFloatingMenu
 
 
 An animated, customizable circular floating menu for Android, inspired by Path app.
