@@ -7,6 +7,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
@@ -26,10 +27,10 @@ public class CircularFloatingMenu extends RelativeLayout {
     int mItemCount = 0;
     private OnItemClickListener mOnItemClickListener;
     boolean mIsOpen = false;
-    int mRadius;// 属性
-    int mDegrees;// 属性
-    int mStartDegree;// 属性
-    boolean mIsItemClickClose;// 属性
+    int mRadius;// 弹出Item的半径
+    int mDegrees;// Items的扇形大小(角度)
+    int mStartDegree;// item从哪个位置开始排列(角度)
+    boolean mIsItemClickClose;// item点击时是否缩回去
     View mVMenu;
     float mPerDegree;
 
@@ -53,26 +54,53 @@ public class CircularFloatingMenu extends RelativeLayout {
         initAttr(context, attrs);
     }
 
-
+    /**
+     * 设置菜单及菜单项的点击事件监听
+     * @param listener
+     */
     public void setOnItemClickListener(OnItemClickListener listener) {
         mOnItemClickListener = listener;
     }
 
+    /**
+     * 设置菜单项移动动画事件监听，用于用户自定义移动动画
+     * @param listener
+     */
     public void setOnItemTranslationListener(OnItemTranslationListener listener) {
         mOnItemTranslationListener = listener;
     }
 
+    /**
+     * 设置菜单项的半径
+     * @param radius
+     */
     public void setRadius(int radius) {
         mRadius = radius;
     }
 
+    /**
+     * 设置菜单项扇形大小(角度)
+     * @param degrees
+     */
     public void setDegrees(int degrees) {
         mDegrees = degrees;
         mPerDegree = mDegrees * 1.0f / (mItemCount - 1);
     }
 
+    /**
+     * 设置菜单项开始排列的位置(角度)
+     * @param degrees
+     */
     public void setStartDegrees(int degrees) {
         mStartDegree = degrees;
+    }
+
+    /**
+     * 设置菜单项点击时是否缩回去
+     * @param isItemClickClose
+     */
+    public void setIsItemClickClose(boolean isItemClickClose) {
+        mIsItemClickClose = isItemClickClose;
     }
 
 
@@ -80,6 +108,62 @@ public class CircularFloatingMenu extends RelativeLayout {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
+        init();
+    }
+
+    @Override
+    public void addView(View child) {
+        super.addView(child);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void addView(View child, int index) {
+        super.addView(child, index);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void addView(View child, int index, ViewGroup.LayoutParams params) {
+        super.addView(child, index, params);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void addView(View child, ViewGroup.LayoutParams params) {
+        super.addView(child, params);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void addView(View child, int width, int height) {
+        super.addView(child, width, height);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void removeView(View view) {
+        super.removeView(view);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void removeViewAt(int index) {
+        super.removeViewAt(index);
+        mInited = false;
+        init();
+    }
+
+    @Override
+    public void removeViews(int start, int count) {
+        super.removeViews(start, count);
+        mInited = false;
         init();
     }
 
