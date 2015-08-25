@@ -22,7 +22,8 @@ CircularFloatingMenu can be attached to **any view** in your layout. CircularFlo
 ```
 
 1 - Create CircularFloatingMenu in layout.xml:
-	eg:<img src="demoRes/20150825093250.png">
+	
+eg:<img src="demoRes/20150825093250.png">
 ```java
 //in layout xml
 <com.lybgo.circularfloatingmenu.CircularFloatingMenu xmlns:android="http://schemas.android.com/apk/res/android"
