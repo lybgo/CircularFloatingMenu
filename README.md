@@ -6,11 +6,11 @@ An animated, customizable circular floating menu for Android, inspired by Path a
 ### Demo
  0. app demo:<img src="demoRes/20150824_181826_5-246.gif">
  1. menu1:
- <img src="demoRes/20150825093207.png">
+<img src="demoRes/20150825093207.png">
  2. menu2:
- <img src="demoRes/20150825093250.png">
+<img src="demoRes/20150825093250.png">
  3. menu3:
- <img src="demoRes/20150825093309.png">
+<img src="demoRes/20150825093309.png">
  4. menu4:
  <img src="demoRes/20150825093347.png">
  5. menu5:
