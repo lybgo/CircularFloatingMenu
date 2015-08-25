@@ -4,16 +4,25 @@
 An animated, customizable circular floating menu for Android, inspired by Path app.
 
 ### Demo
- 1. demo:<img src="demoRes/20150824_181826_5-246.gif">
- 2. menu1:<img src="demoRes/20150825093207.png">
- 3. menu2:<img src="demoRes/20150825093250.png">
- 4. menu3:<img src="demoRes/20150825093309.png">
- 5. menu4:<img src="demoRes/20150825093347.png">
- 6. menu5:<img src="demoRes/20150825093417.png">
- 7. menu6:<img src="demoRes/20150825093435.png">
- 8. menu7:<img src="demoRes/20150825093500.png">
- 9. menu8:<img src="demoRes/20150825093518.png">
- 10. menu9:<img src="demoRes/20150825093555.png">
+ 0. app demo:<img src="demoRes/20150824_181826_5-246.gif">
+ 1. menu1:
+ <img src="demoRes/20150825093207.png">
+ 2. menu2:
+ <img src="demoRes/20150825093250.png">
+ 3. menu3:
+ <img src="demoRes/20150825093309.png">
+ 4. menu4:
+ <img src="demoRes/20150825093347.png">
+ 5. menu5:
+ <img src="demoRes/20150825093417.png">
+ 6. menu6:
+ <img src="demoRes/20150825093435.png">
+ 7. menu7:
+ <img src="demoRes/20150825093500.png">
+ 8. menu8:
+ <img src="demoRes/20150825093518.png">
+ 9. menu9:
+ <img src="demoRes/20150825093555.png">
 
 ## Getting Started
 ### Requirements
